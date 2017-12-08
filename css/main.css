@@ -26,7 +26,7 @@
   }
 
   .image {
-    content: url(../assets/img/kitten-small.png)
+    content: url(../assets/img/kitten-small.png);
   }
 }
 
