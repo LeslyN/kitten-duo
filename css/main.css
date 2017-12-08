@@ -4,13 +4,34 @@
   box-sizing: border-box;
 }
 
+.col-3 {
+
+}
+
+.col-6 {
+  
+}
+
 .bg-mobile {
   background-image: url(../assets/img/dawn.png);
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
+  margin: auto;
 }
 
-img {
-  width: 100%;
+.img-mobile {
+  width: 60%;
+}
+
+@media (max-width:768px) {
+
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+  
+}
+
+@media (min-width: 1025px) {
+  
 }
