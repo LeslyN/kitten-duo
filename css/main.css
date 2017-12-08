@@ -4,66 +4,91 @@
   padding: 0;
 }
 
-@media (max-width:768px) {
-  .bg-mobile {
-    background-image: url(../assets/img/dawn.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-    background-size: cover;
-    margin: auto;
-  }
-}
-
-@media (min-width:769px) and (max-width:1024px) {
-  .bg-mobile {
-    background-image: url(../assets/img/night.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-    background-size: cover;
-    margin: auto;
-  }
-
-  .image {
-    content: url(../assets/img/kitten-small.png)
-  }
-}
-
-@media (min-width: 1025px) {
-  .bg-mobile {
-    background-image: url(../assets/img/sunny-day.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-    background-size: cover;
-    margin: auto;
-  }
-
-  .image {
-    content: url(../assets/img/kitten-medium.png)
-  }
+.bg-style {
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  background-size: cover;
+  margin: auto;
 }
 
 .container {
   width: 100%;
-  height: auto;
   margin: 0 auto;
 }
 
 [class^=col] {
   float: left;
-  padding-top: 19%;
-}
-
-.col-2 {
-  width: 16.66666667%;
-}
-
-.col-8 {
-  width: 66.66666667%;
 }
 
 img {
   width: 100%;
 }
+
+@media (max-width:768px) {
+  .bg-landscape {
+    background-image: url(../assets/img/dawn.png); 
+  }
+
+  .col-8 {
+    width: 66.66666667%;
+  }
+  
+  
+  .col-2 {
+    width: 16.66666667%;
+  }
+  
+  [class^=col] {
+    padding: 30px;
+    margin-top: 130%;
+  }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+  .bg-landscape {
+    background-image: url(../assets/img/night.jpg);
+
+  }
+
+  .cat-img {
+    content: url(../assets/img/kitten-small.png);
+  }
+
+  .col-10 {
+    width: 83.33333333%;
+  }
+
+  .col-1 {
+    width: 8.33333333%;
+  }
+
+  [class^=col] {
+    float: left;
+    padding-top: 60%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .bg-landscape {
+    background-image: url(../assets/img/sunny-day.jpg);
+  }
+
+  .cat-img {
+    content: url(../assets/img/kitten-medium.png);
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  [class^=col] {
+    float: left;
+    padding-top: 17%;
+  }
+}
+
