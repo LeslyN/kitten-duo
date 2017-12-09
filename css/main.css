@@ -15,21 +15,22 @@
 .container {
   width: 100%;
   margin: 0 auto;
+  align-content: center;
 }
 
 [class^=col] {
   float: left;
+  position: fixed;
+  bottom: 0;
 }
 
 img {
   width: 100%;
 }
 
-@media screen and (max-width:600px) {
+@media (max-width:600px) {
   .bg-landscape {
     background-image: url(../assets/img/dawn.png);
-    position: fixed;
-    width: 100%;
   }
 
   .col-8 {
@@ -40,18 +41,15 @@ img {
   .col-2 {
     width: 16.66666667%;
   }
-  
+
   [class^=col] {
-    padding: 30px;
-    margin-top: 130%;
+    margin: 0px 16.66666667%;
   }
 }
 
 @media (min-width:600px) and (max-width:1200px) {
   .bg-landscape {
     background-image: url(../assets/img/night.jpg);
-    position: fixed;
-    width: 100%;
   }
 
   .cat-img {
@@ -67,24 +65,24 @@ img {
   }
 
   [class^=col] {
-    float: left;
-    padding-top: 60%;
+    margin: 0px 8.33333333%;
   }
+
 }
 
-@media screen and (min-width:1200px) {
+@media (min-width: 1200px) {
   .bg-landscape {
     background-image: url(../assets/img/sunny-day.jpg);
-    position: fixed;
-    width: 100%;
   }
 
   .cat-img {
     content: url(../assets/img/kitten-medium.png);
+    
   }
 
   .col-6 {
     width: 50%;
+
   }
 
   .col-3 {
@@ -92,8 +90,8 @@ img {
   }
 
   [class^=col] {
-    float: left;
-    padding-top: 17%;
+    margin: 0px 25%;
   }
+
 }
 
