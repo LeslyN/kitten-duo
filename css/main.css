@@ -56,16 +56,16 @@ img {
     content: url(../assets/img/kitten-small.png);
   }
 
-  .col-10 {
-    width: 83.33333333%;
+  .col-9 {
+    width: 70%;
   }
 
   .col-1 {
-    width: 8.33333333%;
+    width: 15%;
   }
 
   [class^=col] {
-    margin: 0px 8.33333333%;
+    margin: 0px 15%;
   }
 
 }
